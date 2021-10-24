@@ -1,0 +1,44 @@
+{	
+	"name": "better-snippets",
+	"displayName": "Better Snippets",
+	"description": "Easily edit and access your custom snippets.",
+	"version": "1.0.0",
+	"publisher": "rob-bennett",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RobbyCBennett/VSCodeBetterSnippets.git"
+	},
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Snippets",
+		"Languages",
+		"Formatters"
+	],
+	"keywords": [
+		"Snippets",
+		"Add",
+		"Edit",
+		"Multiple",
+		"Lines"
+	],
+	"icon": "icon.png",
+	"activationEvents": [
+        "onCommand:betterSnippets.addSnippet",
+        "onCommand:betterSnippets.editSnippets"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "betterSnippets.addSnippet",
+				"title": "Better Snippets: Add Snippet"
+			},
+			{
+				"command": "betterSnippets.editSnippets",
+				"title": "Better Snippets: Edit Snippets"
+			}
+		]
+	}
+}
